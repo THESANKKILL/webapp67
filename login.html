@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ / ลงทะเบียน</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a8d1e9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #c3e3f6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4ca6ff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #398ad7;
+        }
+        .register-link {
+            margin-top: 15px;
+            display: block;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>เข้าสู่ระบบ / ลงทะเบียน</h2>
+        <form action="#" method="post">
+            <select name="login_type">
+                <option value="other">ประเภทอื่นๆ</option>
+                <option value="citizen">ผู้สมัครงาน</option>
+                <option value="citizen">สถานประกอบการ</option>
+            </select>
+            <input type="text" name="citizen_id" placeholder="เลขประจำตัว" required>
+            <input type="password" name="password" placeholder="รหัสผ่าน" required>
+            <button type="submit">เข้าสู่ระบบ</button>
+        </form>
+        <a href="สมัครงาน.html" class="สมัครงาน-link">สมัครสมาชิก</a>
+    </div>
+</body>
+</html>
