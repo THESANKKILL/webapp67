@@ -1,0 +1,13 @@
+body{
+    background-color: beige;
+}
+table{
+    background-color: aquamarine;
+}
+th,td{
+    border: 2px solid blue;
+}
+button{
+    width: 100px; 
+    border: 2px solid salmon;
+}
